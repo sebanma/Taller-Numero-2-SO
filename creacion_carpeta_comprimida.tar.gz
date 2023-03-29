@@ -7,4 +7,4 @@ carpeta="creacion_carpeta"
 archivo_comprimido="creacion_carpeta.tar.gz"
 
 # Comprimir la carpeta y los archivos
-tar -czf "$archivo_comprimido" "$carpeta" archivo01.txt archivo02.txt suma.txt
+tar -czf "$archivo_comprimido" "$carpeta" archivo01.txt archivo02.txt 
