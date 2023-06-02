@@ -2,12 +2,12 @@
 title: "R Notebook"
 output: html_notebook
 ---
-#Sebastian David Mendoza Alvarado-2191969
+# Sebastian David Mendoza Alvarado-2191969
 
-#Investigación
+# Investigación
 
 
-#Ejercicio 1) Explique la diferencia entre los conceptos de fragmentación interna y externa.
+# Ejercicio 1) Explique la diferencia entre los conceptos de fragmentación interna y externa.
 
 La fragmentación interna y externa son dos conceptos que se refieren a la forma en que se utiliza y administra el espacio de almacenamiento en sistemas de archivos o bases de datos. Aunque ambos términos están relacionados con la fragmentación, se aplican en diferentes contextos y tienen implicaciones distintas.
 
@@ -28,8 +28,7 @@ Hay dos tipos principales de fragmentación externa:
 
 En resumen, la fragmentación interna se refiere al espacio no utilizado dentro de un bloque o página asignada, mientras que la fragmentación externa se relaciona con la distribución no contigua de bloques o segmentos de almacenamiento en todo el sistema. Ambos tipos de fragmentación pueden afectar la eficiencia del sistema de almacenamiento y requerir técnicas de gestión adecuadas para minimizar su impacto.
 
-#Ejercicio 2)¿En que forma el editor de montaje cambia el acoplamiento de las instrucciones y los datos a
-direcciones de memoria?
+# Ejercicio 2)¿En que forma el editor de montaje cambia el acoplamiento de las instrucciones y los datos a direcciones de memoria?
 
 
 El editor de montaje es una herramienta utilizada en el desarrollo de software para convertir el código fuente en lenguaje ensamblador en un archivo ejecutable. Durante este proceso, el editor de montaje realiza varias tareas, incluyendo la asignación de direcciones de memoria a las instrucciones y los datos del programa.
@@ -44,7 +43,7 @@ El editor de montaje cambia el acoplamiento de las instrucciones y los datos a d
 
 En resumen, el editor de montaje juega un papel crucial en la transformación del código fuente en lenguaje ensamblador en un programa ejecutable. Mediante la asignación de direcciones de memoria a las instrucciones y los datos, y resolviendo los símbolos utilizados, el editor de montaje establece el acoplamiento entre las instrucciones y los datos en las direcciones de memoria adecuadas.
 
-#Ejercicio 3)¿Que información debe pasar el compilador al editor de montaje para facilitar el acoplamiento
+# Ejercicio 3)¿Que información debe pasar el compilador al editor de montaje para facilitar el acoplamiento
 de memoria de éste?
 
 
@@ -63,7 +62,7 @@ La información que puede ser relevante para el acoplamiento de memoria y que el
 Es importante destacar que la forma en que el compilador y el editor de montaje interactúan y comparten información puede variar según las herramientas y el sistema en particular. La respuesta anterior describe una situación típica, pero pueden existir variaciones dependiendo del entorno de desarrollo y las herramientas utilizadas.
 
 
-#Ejercicio 4)En el siguiente orden, se tienen cinco particiones de memoria de 100 KB, 500 KB, 200 KB, 300KB, y 600 KB. ¿Como situarían en memoria una serie de procesos de 212 KB, 417 KB, 112KB y 426 KB en ese orden con los algoritmos de primer ajuste, mejor ajuste y peor ajuste?¿Que algoritmo hace el uso más eficiente de la memoria
+# Ejercicio 4) En el siguiente orden, se tienen cinco particiones de memoria de 100 KB, 500 KB, 200 KB, 300KB, y 600 KB. ¿Como situarían en memoria una serie de procesos de 212 KB, 417 KB, 112KB y 426 KB en ese orden con los algoritmos de primer ajuste, mejor ajuste y peor ajuste?¿Que algoritmo hace el uso más eficiente de la memoria
 
 Para situar los procesos en las particiones de memoria utilizando los algoritmos de primer ajuste, mejor ajuste y peor ajuste, se siguen las siguientes reglas:
 
@@ -75,7 +74,7 @@ Para situar los procesos en las particiones de memoria utilizando los algoritmos
 
 Siguiendo estas reglas, situemos los procesos en las particiones de memoria en el orden especificado:
 
-*Primer ajuste:*
+**Primer ajuste:**
 
 212 KB: Se coloca en la partición de 500 KB.
 
@@ -86,7 +85,7 @@ Siguiendo estas reglas, situemos los procesos en las particiones de memoria en e
 426 KB: Se coloca en la partición de 500 KB.
 
 
-*Mejor ajuste:*
+**Mejor ajuste:**
 
 212 KB: Se coloca en la partición de 300 KB, ya que es la partición más pequeña que puede acomodarlo.
 
@@ -97,7 +96,7 @@ Siguiendo estas reglas, situemos los procesos en las particiones de memoria en e
 426 KB: Se coloca en la partición de 500 KB, ya que es la partición más pequeña que puede acomodarlo.
 
 
-*Peor ajuste:*
+**Peor ajuste:**
 
 212 KB: Se coloca en la partición de 600 KB, ya que es la partición más grande que puede acomodarlo.
 
@@ -109,11 +108,11 @@ Siguiendo estas reglas, situemos los procesos en las particiones de memoria en e
 
 En términos de eficiencia del uso de la memoria, el algoritmo de mejor ajuste es generalmente considerado como el más eficiente, ya que busca la partición que mejor se ajuste al tamaño del proceso. Esto minimiza el desperdicio de espacio y permite aprovechar al máximo la memoria disponible. Sin embargo, es importante tener en cuenta que la eficiencia del uso de la memoria puede variar según las características específicas de los procesos y las particiones de memoria disponibles.
 
-#Ejercicio 5)La mayoría de OS permiten a los programas asignar más memoria a su espacio de direccionesdurante la ejecución. ¿Que se necesitaría para soportar la asignación dinámica de memoria en los siguientes esquemas?1. Asignación contigua de memoria.2. Segmentación pura.3. Paginación pura.
+# Ejercicio 5)La mayoría de OS permiten a los programas asignar más memoria a su espacio de direccionesdurante la ejecución. ¿Que se necesitaría para soportar la asignación dinámica de memoria en los siguientes esquemas?1. Asignación contigua de memoria.2. Segmentación pura.3. Paginación pura.
 
 Para soportar la asignación dinámica de memoria en los esquemas mencionados, se requieren ciertos mecanismos y estructuras adicionales en el sistema operativo. A continuación, se detallan los requisitos para cada uno de los esquemas:
 
-*1)Asignación contigua de memoria:*
+**1)Asignación contigua de memoria:**
 
 **Fragmentación:** El sistema operativo debe manejar la fragmentación interna y externa de la memoria. Para abordar la fragmentación interna, se pueden utilizar técnicas como la asignación en bloques de tamaño fijo o el uso de técnicas de relleno para ocupar el espacio no utilizado. Para la fragmentación externa, se puede implementar un mecanismo de compactación que reorganice las particiones de memoria y reduzca el espacio libre fragmentado.
 
@@ -123,7 +122,7 @@ Para soportar la asignación dinámica de memoria en los esquemas mencionados, s
 **Gestión del espacio libre:** El sistema operativo debe realizar un seguimiento del espacio libre disponible en la memoria y tener algoritmos eficientes para encontrar y asignar bloques de memoria contiguos cuando se solicite una asignación dinámica.
 
 
-*2)Segmentación pura:*
+**2)Segmentación pura:**
 
 **Tabla de segmentos:** El sistema operativo debe mantener una tabla de segmentos que contenga información sobre cada segmento asignado a un programa, incluyendo su dirección base, límites y otros atributos. Esta tabla debe actualizarse y modificarse cuando se realiza una asignación dinámica de memoria.
 
@@ -133,7 +132,7 @@ Para soportar la asignación dinámica de memoria en los esquemas mencionados, s
 **Protección de segmentos:** El sistema operativo debe implementar mecanismos de protección para garantizar que un programa no acceda a segmentos de memoria asignados a otros programas o al sistema operativo.
 
 
-*3)Paginación pura:*
+**3)Paginación pura:**
 
 **Tablas de páginas:** El sistema operativo necesita mantener tablas de páginas que mapeen las páginas virtuales a las páginas físicas correspondientes en la memoria. Estas tablas se actualizan dinámicamente cuando se asigna más memoria a un programa. Además, el sistema operativo necesita llevar un registro de las páginas virtuales libres y disponibles en la memoria.
 
@@ -145,7 +144,7 @@ Para soportar la asignación dinámica de memoria en los esquemas mencionados, s
 
 En resumen, para soportar la asignación dinámica de memoria en los esquemas mencionados, el sistema operativo necesita contar con mecanismos adecuados para la gestión de memoria, el manejo de fragmentación, la reubicación de direcciones y el seguimiento de las asignaciones realizadas. Cada esquema tiene sus propios requisitos y desafíos específicos a considerar.
 
-#Ejercicio 6)Compare los esquemas de organización de la memoria principal basados en una asignación continua de memoria, en una segmentación pura y una paginación pura con respecto a:1. Fragmentación externa.2. Fragmentación interna.3. Capacidad de compartir código.
+# Ejercicio 6)Compare los esquemas de organización de la memoria principal basados en una asignación continua de memoria, en una segmentación pura y una paginación pura con respecto a:1. Fragmentación externa.2. Fragmentación interna.3. Capacidad de compartir código.
 
 *1)Fragmentación externa:*
 
@@ -183,7 +182,7 @@ En resumen, para soportar la asignación dinámica de memoria en los esquemas me
 En resumen, en términos de fragmentación externa, la asignación continua de memoria es más propensa a sufrir fragmentación, mientras que la segmentación pura y la paginación pura la minimizan o eliminan. En cuanto a la fragmentación interna, la asignación continua de memoria y la paginación pura pueden tener cierta cantidad de fragmentación interna, mientras que la segmentación pura la evita por completo. En términos de compartir código, tanto la segmentación pura como la paginación pura son más adecuadas, ya que permiten el intercambio eficiente de código entre programas, lo que resulta en un uso más eficiente de la memoria.
 
 
-#Ejercicio 7) En un OS con paginación, un proceso no puede acceder a una zona de memoria que no sea de su propiedad.1. ¿Por qué? 2. ¿Como podía el OS permitir el acceso a otras zonas de memoria? 3. ¿Por qué debería o por qué no debería?
+# Ejercicio 7) En un OS con paginación, un proceso no puede acceder a una zona de memoria que no sea de su propiedad.1. ¿Por qué? 2. ¿Como podía el OS permitir el acceso a otras zonas de memoria? 3. ¿Por qué debería o por qué no debería?
 
 *1*En un sistema operativo con paginación, un proceso no puede acceder a una zona de memoria que no sea de su propiedad debido a las políticas de protección de memoria implementadas en el sistema. Estas políticas de protección son esenciales para garantizar la seguridad y el aislamiento entre los procesos en ejecución.
 Cuando se utiliza paginación, la memoria se divide en páginas de tamaño fijo. Cada proceso tiene su propia tabla de páginas, que mapea las páginas lógicas del proceso a las páginas físicas en la memoria principal. El sistema operativo controla y gestiona estas tablas de páginas para asegurarse de que un proceso solo pueda acceder a las páginas asignadas a él.
@@ -203,7 +202,7 @@ Sin embargo, permitir el acceso a otras zonas de memoria también puede introduc
 En última instancia, la decisión de permitir o no el acceso a otras zonas de memoria debe basarse en una evaluación cuidadosa de los requisitos del sistema, las consideraciones de seguridad y la complejidad adicional que puede introducir.
 
 
-#Ejercicio 8) Compare el mecanismo de paginación con el de segmentación con respecto a la cantidad de memoria requerida por las estructuras de producción de direcciones para convertir las direcciones virtuales en direcciones físicas.
+# Ejercicio 8) Compare el mecanismo de paginación con el de segmentación con respecto a la cantidad de memoria requerida por las estructuras de producción de direcciones para convertir las direcciones virtuales en direcciones físicas.
 
 El mecanismo de paginación y el de segmentación tienen diferentes enfoques en cuanto a la cantidad de memoria requerida por las estructuras de producción de direcciones para convertir las direcciones virtuales en direcciones físicas.
 
@@ -215,7 +214,7 @@ En comparación, la cantidad de memoria requerida por las estructuras de producc
 
 Sin embargo, es importante tener en cuenta que la cantidad exacta de memoria requerida por las estructuras de producción de direcciones varía según el tamaño de la memoria virtual direccionable, el tamaño de página o segmento utilizado y la cantidad de procesos en ejecución. En general, la paginación tiende a ser más adecuada para sistemas con una gran cantidad de memoria virtual direccionable y una variación en los tamaños de programas, mientras que la segmentación puede ser más eficiente en entornos donde los programas son más grandes y tienen requisitos de tamaño fijo.
 
-#Ejercicio 9) Considere la siguiente tabla de segmento:¿Cuales son las direcciones físicas para las siguientes direcciones lógicas?1. 0. 430,2. 1. 10,3. 2. 500,4. 3. 400,5. 4. 112
+# Ejercicio 9) Considere la siguiente tabla de segmento:¿Cuales son las direcciones físicas para las siguientes direcciones lógicas?1. 0. 430,2. 1. 10,3. 2. 500,4. 3. 400,5. 4. 112
 
 Para determinar las direcciones físicas correspondientes a las direcciones lógicas dadas en la tabla de segmentos, se utiliza la fórmula:
 
